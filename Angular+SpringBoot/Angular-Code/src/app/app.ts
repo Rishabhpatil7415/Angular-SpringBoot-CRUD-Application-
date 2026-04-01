@@ -12,5 +12,5 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('angular-frontend');
+  protected readonly title = signal('Angular-SpringBoot-project');
 }

@@ -27,12 +27,22 @@ public class Employee {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Employee(String firstname, String lastname, String email) {
-		super();
-		this.firstname = firstname;
-		this.lastname = lastname;
-		this.email = email;
+	public long getId() {
+	    return id;
 	}
+
+	public void setId(long id) {
+	    this.id = id;
+	}
+
+	
+	public Employee(long id, String firstname, String lastname, String email) {
+	    this.id = id;
+	    this.firstname = firstname;
+	    this.lastname = lastname;
+	    this.email = email;
+	}
+	
 	public String getFirstname() {
 		return firstname;
 	}

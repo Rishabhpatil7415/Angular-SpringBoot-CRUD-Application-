@@ -5,13 +5,16 @@
            <th> First Name</th>
            <th> Last name</th>
            <th> email </th>
+           <th> Actions </th>
         </tr>
      </thead>
  <tbody>
-<tr *ngFor = "let e of employees" >  
-      <td>{{ e.firstname }}</td>
-      <td>{{ e.lastname }}</td>
-      <td>{{ e.email }}</td>
-    </tr>
-</tbody> 
+<tr *ngFor="let e1 of employees ">  
+      <td>{{ e1.firstname }}</td>
+      <td>{{ e1.lastname }}</td>
+      <td>{{ e1.email }}</td>
+      <td><button (click)="updateEmployee(e1.id)" class="btn btn-info">Update</button></td>
+      <td><button (click)="deleteEmployee(e1.id)" class="btn btn-danger" style="margin-left :10px">Delete</button></td>
+      <td><button (click)="employeeDetails(e1.id)" class="btn btn-success" style="margin-left :10px">view</button></td>
+    </tr></tbody> 
 </table>
